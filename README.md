@@ -1,4 +1,4 @@
-# 4 HTML & CSS Templates focusing on different design aspects:
+# 4 HTML & CSS Templates focusing on different design aspects & techniques:
 
 This repository contains four HTML & CSS templates providing a comprehensive collection of designs. Each template focuses on different web development techniques and layout structures
 
