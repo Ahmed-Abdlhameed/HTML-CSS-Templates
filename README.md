@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# 4 HTML & CSS Templates focusing on different design aspects:
-=======
 # 4 HTML & CSS Templates focusing on different design aspects & techniques:
->>>>>>> 84ed442c43142b4f4c60d31cc21bb0b026eabc05
 
 This repository contains four HTML & CSS templates providing a comprehensive collection of designs. Each template focuses on different web development techniques and layout structures
 
@@ -56,8 +52,4 @@ Feel free to fork the repository and contribute by adding more templates or impr
 
 ## License
 
-<<<<<<< HEAD
 This repository is for personal documentation purposes. Feel free to use or distribute its content as you wish.
-=======
-This repository is for personal documentation purposes. Feel free to use or distribute its content as you wish.
->>>>>>> 84ed442c43142b4f4c60d31cc21bb0b026eabc05
