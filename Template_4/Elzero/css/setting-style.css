@@ -1,0 +1,371 @@
+/* Start Setting Page */
+/* Start Control Widget */
+.control {
+    background-color: white;
+    padding: var(--widget-padding);
+    border-radius: var(--widget-radius);
+}
+.control > h2 {
+    margin: 0 0 18px 0;
+}
+.control > p {
+    color: var(--grey-color);
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.control > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.control > div div p {
+    color: var(--grey-color);
+    margin: 5px 0 0;
+    font-size: 13px;
+}
+.control > textarea {
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    height: 160px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+/* End Control Widget */
+/* Start Info Widget */
+.info {
+    background-color: white;
+    padding: var(--widget-padding);
+    border-radius: var(--widget-radius);
+}
+.info > h2 {
+    margin: 0 0 18px 0;
+}
+.info > p {
+    color: var(--grey-color);
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.info form > label,
+.info form > input {
+    display: block;
+}
+.info form label {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.info form input:not([type="submit"]) {
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.info form .email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info form input[type="email"] {
+    width: 75%;
+    margin-bottom: 0;
+    cursor: no-drop;
+    opacity: 0.8;
+    background-color: #0d69d533;
+}
+.info form input[type="submit"] {
+    border: none;
+    background: none;
+    color: var(--blue-alt-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+/* End Info Widget */
+/* Start Security Widget */
+.security {
+    background-color: white;
+    padding: var(--widget-padding);
+    border-radius: var(--widget-radius);
+}
+.security > h2 {
+    margin: 0 0 18px 0;
+}
+.security > p {
+    color: var(--grey-color);
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.security > .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.security > .box:not(:last-child) {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+.security > .box .txt {
+    flex: 1;
+}
+.security > .box .txt span {
+    font-size: 15px;
+}
+.security > .box .txt p {
+    margin: 10px 0 0;
+    color: var(--grey-color);
+    font-size: 13px;
+}
+.security > .box > span {
+    font-size: 15px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.security > .box:first-of-type > span {
+    background-color: var(--blue-color);
+    color: white;
+}
+.security > .box:first-of-type > span:hover {
+    background-color: var(--blue-alt-color);
+}
+.security > .box:last-child > span {
+    background-color: #eee;
+}
+.security > .box:last-child > span:hover {
+    background-color: #ddd;
+}
+/* End Security Widget */
+/* Start Security Widget */
+.social {
+    background-color: white;
+    padding: var(--widget-padding);
+    border-radius: var(--widget-radius);
+}
+.social > h2 {
+    margin: 0 0 18px 0;
+}
+.social > p {
+    color: var(--grey-color);
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.social .box {
+    position: relative;
+    display: flex;
+    height: 40px;
+}
+.social .box:not(:last-child) {
+    margin-bottom: 20px;
+}
+.social .box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    justify-content: center;
+    opacity: 0.6;
+    border-right: 1px solid #ccc;
+    transition: var(--main-transition);
+}
+.social .box input {
+    width: 100%;
+    background-color: #eee;
+    padding-left: 60px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    border-radius: 6px;
+}
+.social .box input::placeholder {
+    transition: var(--main-transition);
+}
+.social .box input:focus::placeholder {
+    opacity: 0.6;
+}
+.social .box:focus-within i { /* Any focus on any element inside .box you can then control any element within it */
+    opacity: 1;
+}
+/* End Security Widget */
+/* Start W-Control Widget */
+.w-control {
+    background-color: white;
+    padding: var(--widget-padding);
+    border-radius: var(--widget-radius);
+}
+.w-control > h2 {
+    margin: 0 0 18px 0;
+}
+.w-control > p {
+    color: var(--grey-color);
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.w-control > form div { 
+    display: flex;
+    align-items: center;
+}
+.w-control > form div:not(:last-child) {
+    margin-bottom: 10px;
+}
+.w-control > form div input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.w-control > form div label {
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.w-control > form div label::before,
+.w-control > form div label::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transition: var(--main-transition);
+    border-radius: 3px;
+}
+.w-control > form div label::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--grey-color);
+    transform: translateY(-50%);
+}
+.w-control > form div label:hover::before {
+    border-color: var(--blue-alt-color);
+}
+.w-control > form div label::after {
+    content: "\f00c";
+    font-family: "Font Awesome 6 free";
+    font-weight: 900;
+    transform: translateY(-50%) scale(0);
+    background-color: var(--blue-color);
+    color: white;
+    font-size: 12px;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.w-control > form div input:checked + label::after {
+    transform: translateY(-50%) scale(1) rotate(360deg);
+}
+/* End W-Control Widget */
+/* Start Backup Widget */
+.backup {
+    background-color: white;
+    padding: var(--widget-padding);
+    border-radius: var(--widget-radius);
+}
+.backup > h2 {
+    margin: 0 0 18px 0;
+}
+.backup > p {
+    color: var(--grey-color);
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.backup > form div { 
+    display: flex;
+    align-items: center;
+}
+.backup > form div:not(:last-child) {
+    margin-bottom: 20px;
+}
+.backup > form div input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.backup > form div label {
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.backup > form div label::before,
+.backup > form div label::after {
+    position: absolute;
+    transition: var(--main-transition);
+    top: 50%;
+}
+.backup > form div label::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--grey-color);
+    transform: translateY(-50%);
+    left: 0;
+}
+.backup > form div label:hover::before,
+.backup > form div input:checked + label::before {
+    border-color: var(--blue-alt-color);
+}
+.backup > form div label::after {
+    content: "";
+    transform: translateY(-50%) scale(0);
+    background-color: var(--blue-color);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 6px;
+}
+.backup > form div input:checked + label::after {
+    transform: translateY(-50%) scale(1);
+}
+.servers {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    gap: 10px;
+    margin-top: 20px;
+}
+@media (max-width: 767px) {
+    .servers {
+        flex-direction: column;
+    }
+    .servers .server {
+        width: 100%;
+    }
+}
+.servers .server > input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.servers .server {
+    flex: 1;
+}
+.servers .server label {
+    cursor: pointer;
+    border-radius: var(--widget-radius);
+    border: 2px solid #eee;
+    transition: var(--main-transition);
+    padding: 15px;
+    display: block;
+}
+.servers .server label:hover {
+    border-color: var(--grey-color);
+}
+.servers .server label i {
+    display: block;
+    margin-bottom: 10px;
+}
+.servers .server > input:checked + label {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+/* End Backup Widget */
+/* End Setting Page */

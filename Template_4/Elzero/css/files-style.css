@@ -1,0 +1,180 @@
+/* Start Files Page */
+.files-page {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px;
+}
+@media (max-width: 767px) {
+    .files-page {
+        flex-direction: column-reverse;
+        align-items: unset;
+    }
+}
+/* Start Files */
+.files-page .files {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.files-page .files > .box {
+    background-color: white;
+    border-radius: var(--widget-radius);
+    padding: 10px;
+    position: relative;
+}
+.files-page .files > .box i {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: var(--grey-color);
+    transition: var(--main-transition);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.files-page .files > .box i:hover {
+    animation: color 0.5s infinite alternate;
+    transform: scale(1.1);
+    background-color: #eee;
+}
+.files-page .files > .box > .img-box {
+    text-align: center;
+    padding: 40px 0 0;
+    margin: auto;
+    width: fit-content;
+}
+.files-page .files > .box > .img-box:hover > p::before {
+    width: 100%;
+}
+.files-page .files > .box > .img-box:hover > img {
+    transform: scale(1.07) rotate(5deg);
+}
+.files-page .files > .box img {
+    width: 70px;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.files-page .files > .box > .img-box > p {
+    font-size: 15px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    position: relative;
+}
+.files-page .files > .box > .img-box > p::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: var(--main-transition);
+}
+.files-page .files > .box span {
+    color: var(--grey-color);
+    font-size: 13px;
+}
+.files-page .files > .box .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+}
+/* End Files */
+/* Start Stats */
+.files-page .stats {
+    background-color: white;
+    padding: var(--widget-padding);
+    border-radius: var(--widget-radius);
+    flex: 1;
+    min-width: 260px;
+}
+.files-page .stats > h2 {
+    margin: 0 0 15px 0;
+}
+.files-page .stats > .box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 8px;
+    transition: var(--main-transition);
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.files-page .stats > .box:hover {
+    background-color: #eee;
+}
+.files-page .stats > .box i {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.files-page .stats > .box:first-of-type i {
+    color: var(--red-color);
+    background-color: #FDD9D7;
+}
+.files-page .stats > .box:nth-of-type(2) i {
+    color: var(--green-color);
+    background-color: #D3F3DF;
+}
+.files-page .stats > .box:nth-of-type(3) i {
+    color: var(--blue-color);
+    background-color: #CCE3FF;
+}
+.files-page .stats > .box:nth-of-type(4) i {
+    color: var(--orange-color);
+    background-color: #FDECCE;
+}
+.files-page .stats > .box .txt h4 {
+    margin: 0 0 3px;
+    font-size: 14px;
+}
+.files-page .stats > .box .txt span {
+    font-size: 13px;
+    color: var(--grey-color);
+}
+.files-page .stats > .box > span {
+    margin-left: auto;
+    color: var(--grey-color);
+    font-size: 13px;
+}
+.files-page .stats > .upload {
+    transition: var(--main-transition);
+    background-color: var(--blue-color);
+    margin: 0 auto;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.files-page .stats > .upload:hover {
+    background-color: var(--blue-alt-color);
+}
+.files-page .stats > .upload:hover i {
+    animation: up-down 0.3s infinite alternate;
+}
+.files-page .stats > .upload i {
+    transition: var(--main-transition);
+}
+/* End Stats */
+/* End Files Page */
