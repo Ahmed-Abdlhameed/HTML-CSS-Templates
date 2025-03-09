@@ -1,0 +1,216 @@
+/* Start Profile Page */
+.profile-page {
+    margin: 20px;
+}
+/* Start Overview Widget */
+.overview {
+    background-color: white;
+    padding: var(--widget-padding);
+    border-radius: var(--widget-radius);
+    display: flex;
+}
+.overview .img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    padding: 20px 40px;
+    text-align: center;
+}
+@media (min-width: 991px) {
+    .overview .img-box {
+        border-right: 1px solid #eee;
+    }
+}
+.overview .img-box img {
+    width: 110px;
+}
+.overview .img-box h4 {
+    margin: 0;
+}
+.overview .img-box h4 img {
+    width: 12px;
+}
+.overview .img-box > span {
+    color: var(--grey-color); 
+}
+.overview .img-box .prog {
+    position: relative;
+    width: 120px;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 10px;   
+}
+.overview .img-box .prog span {
+    position: absolute;
+    background-color: var(--blue-color);
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;   
+    left: 0;
+}
+.overview .img-box .stars i {
+    color: #FFC107;   
+    font-size: 14px;
+}
+.overview .img-box span:last-child {
+    font-size: 14px;
+}
+.overview .txt-box {
+    flex: 1;
+}
+.overview .txt-box .box { 
+    padding: 20px;
+    transition: var(--main-transition);
+}
+.overview .txt-box .box:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+.overview .txt-box .box:hover {
+    background-color: #f9f9f9;
+}
+.overview .txt-box .box p { 
+    margin: 0 0 10px;
+    color: var(--grey-color);
+}
+.overview .txt-box .box .info { 
+    display: flex;
+    gap: 30px;
+}
+.overview .txt-box .box .switch {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.overview .txt-box .box .switch p {
+    margin: 13px 0 0;
+}
+.overview .txt-box .box .info > span { 
+    color: var(--grey-color);
+}
+.overview .txt-box .box .info span span {
+    color: black;
+}
+.profile-page .toggle-switch {
+    height: 22px;
+}
+.profile-page .toggle-check:checked + .toggle-switch::before {
+    left: 62px;
+}
+.profile-page .toggle-switch::before {
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+}
+@media (max-width: 991px) {
+    .overview {
+        flex-direction: column;
+    }
+    .overview .txt-box .box {
+        text-align: center;
+    }
+    .overview .txt-box .box .info {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .overview .txt-box .box .switch {
+        width: fit-content;
+        margin: auto;
+    }
+}
+/* End Overview Widget */
+.sa {
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+/* Start Skills Widget */
+.sa .skills {
+    background-color: white;
+    padding: var(--widget-padding);
+    border-radius: var(--widget-radius);
+    flex: 1;
+}
+.sa .skills > h2 {
+    margin: 0 0 18px 0;
+}
+.sa .skills > p {
+    color: var(--grey-color);
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.sa .skills > .boxes .box {
+    padding-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.sa .skills > .boxes .box:not(:last-child) {
+    border-bottom: 1px solid #ccc
+}
+.sa .skills > .boxes .box span {
+    background-color: #eee;
+}
+/* End Skills Widget */
+/* Start Activites Widget */
+.activites {
+    background-color: white;
+    padding: var(--widget-padding);
+    border-radius: var(--widget-radius);
+    flex: 2;
+}
+.activites > .h2 {
+    margin: 0 0 18px 0;
+}
+.activites > p {
+    color: var(--grey-color);
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.activites .boxes .box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.activites .boxes .box:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+.activites .boxes .box img {
+    width: 60px;
+}
+.activites .boxes .box .txt p {
+    margin: 8px 0 0;
+    color: var(--grey-color);
+}
+.activites .boxes .box .date {
+    margin-left: auto;
+    text-align: right;
+}
+.activites .boxes .box .date span:last-child {
+    display: block;
+    margin-top: 10px;
+    color: var(--grey-color);
+}
+@media (max-width: 991px) {
+    .sa {
+        flex-direction: column;
+    }
+    .sa .skills .boxes .box {
+        justify-content: center;
+    }
+    .activites .boxes .box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .activites .boxes .box .date {
+        margin: auto;
+        text-align: center;
+    }
+}
+/* End Activites Widget */
+/* End Profile Page */

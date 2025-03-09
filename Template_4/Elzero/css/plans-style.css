@@ -1,0 +1,92 @@
+/* Start Plans Page */
+.plans-page .plan {
+    background-color: white;
+    border-radius: var(--widget-radius);
+    padding: var(--widget-padding);
+    position: relative;
+}
+.plans-page .plan .cover {
+    border: 3px solid white;
+    outline: 3px solid;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.plans-page .plan:first-child .cover {
+    background-color: var(--green-color);
+    outline-color: var(--green-color);
+}
+.plans-page .plan:nth-child(2) .cover {
+    background-color: var(--blue-color);
+    outline-color: var(--blue-color);
+}
+.plans-page .plan:nth-child(3) .cover {
+    background-color: var(--orange-color);
+    outline-color: var(--orange-color);
+}
+.plans-page .plan .cover > span:first-child {
+    font-size: 25px;
+    font-weight: bold;
+}
+.plans-page .plan .cover span:last-child {
+    font-size: 40px;
+    position: relative;
+}
+.plans-page .plan .cover span:last-child > span {
+    position: absolute;
+    top: -10px;
+    font-size: 25px;
+    left: -22px;
+}
+.plans-page .plan ul {
+    margin-top: 20px;
+}
+.plans-page .plan ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+.plans-page .plan ul li i.true {
+    color: var(--green-color);
+}
+.plans-page .plan ul li i.false {
+    color: var(--red-color);
+}
+.plans-page .plan ul li i:last-child {
+    margin-left: auto;
+    color: var(--grey-color);
+    transition: 0.1s;
+    cursor: pointer;
+}
+.plans-page .plan ul li i:last-child:hover {
+    color: black;
+    font-size: large;
+}
+.plans-page .plan:not(:last-child) > span {
+    background-color: var(--grey-color);
+    color: white;
+    display: block;
+    width: fit-content;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.plans-page .plan:last-child > span {
+    color: var(--grey-color);
+    margin: 15px auto 0;
+    display: block;
+    text-align: center;
+}
+.plans-page .plan:first-child > span:hover {
+    background-color: var(--green-color);
+}
+.plans-page .plan:nth-child(2) > span:hover {
+    background-color: var(--blue-color);
+}
+/* End Plans Page */

@@ -1,0 +1,782 @@
+/* Start Dashboard Page */
+/* Start Welcome Widget */
+.content .wrapper .welcome {
+  background-color: white;
+  border-radius: var(--widget-radius);
+  overflow: hidden;
+}
+.content .wrapper .welcome .intro {
+  padding: var(--widget-padding);
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+}
+.content .wrapper .welcome .intro img {
+  width: 170px;
+}
+.content .wrapper .welcome .intro div h2 {
+  margin: 0;
+}
+.content .wrapper .welcome .intro div p {
+  color: var(--grey-color);
+  margin-top: 10px;
+}
+.content .wrapper .welcome img.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transform: translate(10px, -30px);
+}
+.content .wrapper .welcome .body {
+  text-align: center;
+  display: flex;
+  padding: var(--widget-padding);
+  margin: 10px 0 20px 0;
+  border-bottom: 1px solid #eee;
+}
+.content .wrapper .welcome .body div {
+  flex: 1; /* To make all elements take the same size */
+}
+.content .wrapper .welcome .body div span {
+  display: block;
+  color: var(--grey-color);
+  margin-top: 10px;
+  font-size: 14px;
+}
+.content .wrapper .welcome a.visit {
+  display: block;
+  width: fit-content;
+  font-size: 14px;
+  color: white;
+  background-color: var(--blue-color);
+  margin: 0 15px 15px auto; /* auto from left to make the element come all way to the right */
+  transition: var(--main-transition);
+}
+.content .wrapper .welcome a.visit:hover {
+  background-color: var(--blue-alt-color);
+}
+@media (max-width: 767px) {
+  .content .wrapper .welcome {
+    text-align: center;
+    /* display: block; */
+  }
+  .content .wrapper .welcome .intro img {
+    display: none;
+  }
+  .content .wrapper .welcome img.avatar {
+    transform: translate(0, -30px);
+  }
+  .content .wrapper .welcome .body {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+/* End Welcome Widget */
+/* Start Quick Draft Widget */
+.quick-draft {
+  background-color: white;
+  border-radius: var(--widget-radius);
+  padding: var(--widget-padding);
+}
+.quick-draft h2 {
+  margin: 0;
+}
+.quick-draft > p {
+  font-size: 16px;
+  color: var(--grey-color);
+  margin-top: 15px;
+}
+.quick-draft form input:not(:last-child),
+.quick-draft form textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #eee;
+  border-radius: 7px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.quick-draft form input:not(:last-child)::placeholder,
+.quick-draft form textarea::placeholder {
+  transition: var(--main-transition);
+}
+.quick-draft form input:not(:last-child):focus::placeholder,
+.quick-draft form textarea:focus::placeholder {
+  opacity: 0.6;
+}
+.quick-draft form textarea {
+  resize: none;
+  height: 170px;
+}
+.quick-draft form input:last-child {
+  width: fit-content;
+  color: white;
+  background-color: var(--blue-color);
+  border: none;
+  font-size: 15px;
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.quick-draft form input:last-child:hover {
+  background-color: var(--blue-alt-color);
+}
+/* End Quick Draft Widget */
+/* Start Targets Widget */
+.targets {
+  padding: var(--widget-padding);
+  border-radius: var(--widget-radius);
+  background-color: white;
+}
+.targets h2 {
+  margin: 0;
+}
+.targets > p {
+  color: var(--grey-color);
+  margin-top: 10px;
+}
+.targets .holder {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.targets .holder > i {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.targets .holder .details {
+  flex: 1;
+}
+.targets .holder .details > span {
+  color: var(--grey-color);
+  font-size: 15px;
+  display: block;
+}
+.targets .holder .details > h4 {
+  margin: 5px 0 10px;
+}
+.targets .holder .details > .prog {
+  height: 4px;
+}
+.targets .holder .details > .prog span { 
+  display: block;
+  height: 100%;
+  position: relative;
+}
+.targets .holder .details > .prog span::before {
+  content: attr(d-progress);
+  padding: 3px 5px;
+  border-radius: 5px;
+  position: absolute;
+  color: white;
+  right: -16px;
+  top: -33px;
+  font-size: 12px;
+}
+.targets .holder .details > .prog span::after {
+  content: "";
+  border-style: solid;
+  border-width: 6px;
+  position: absolute;
+  top: -14px;
+  right: -5px;
+}
+/* First */
+.progress .first > i {
+  color: var(--blue-color);
+}
+.progress .first > i,
+.progress .first .details .prog {
+  background-color: rgb(0 117 255 / 20%);
+}
+.targets .first .details > .prog span,
+.targets .first .details > .prog span::before {
+  background-color: var(--blue-color);
+}
+.targets .first .details > .prog span::after {
+  border-color: var(--blue-color) transparent transparent transparent;
+}
+/* Second */
+.progress .second > i {
+  color: var(--orange-color);
+}
+.progress .second > i,
+.progress .second .details .prog {
+  background-color: rgb(245 158 11 / 20%);
+}
+.targets .second .details > .prog span,
+.targets .second .details > .prog span::before {
+  background-color: var(--orange-color);
+}
+.targets .second .details > .prog span::after {
+  border-color: var(--orange-color) transparent transparent transparent;
+}
+/* Third */
+.progress .third > i {
+  color: var(--green-color);
+}
+.progress .third > i,
+.progress .third .details .prog {
+  background-color: rgb(34 197 94 / 20%);
+}
+.targets .third .details > .prog span,
+.targets .third .details > .prog span::before {
+  background-color: var(--green-color);
+}
+.targets .third .details > .prog span::after {
+  border-color: var(--green-color) transparent transparent transparent;
+}
+/* End Targets Widget */
+/* Start Tickets Widget */
+.tickets {
+  padding: var(--widget-padding);
+  border-radius: var(--widget-radius);
+  background-color: white;
+}
+.tickets > h2 {
+  margin: 0;
+}
+.tickets > p {
+  color: var(--grey-color);
+  margin-top: 10px;
+}
+.tickets .stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tickets .stats .box {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: calc(50% - 10px);
+  border-radius: var(--widget-radius);
+}
+.tickets .stats .box i {
+  font-size: 25px;
+}
+.tickets .stats .first i {
+  color: var(--orange-color);
+} 
+.tickets .stats .second i {
+  color: var(--blue-color);
+} 
+.tickets .stats .third i {
+  color: var(--green-color);
+} 
+.tickets .stats .fourth i {
+  color: var(--red-color);
+} 
+.tickets .stats .box span {
+  color: var(--grey-color);
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .tickets .stats .box {
+    width: 100%;
+  }
+}
+/* End Tickets Widget */
+/* Start News Widget */
+.news {
+  background-color: white;
+  padding: var(--widget-padding);
+  border-radius: var(--widget-radius);
+}
+.news > h2 {
+  margin: 0 0 18px 0;
+}
+.news .box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.news .box:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.news .box img {
+  width: 100px;
+  max-width: 100%;
+  border-radius: 6px;
+}
+.news .box .txt {
+  flex: 1;
+}
+.news .box .txt h4 {
+  margin: 0;
+  font-size: 16px;
+}
+.news .box .txt p {
+  margin: 10px 0 0 0;
+  font-size: 13px;
+  color: var(--grey-color);
+}
+.news .box > span {
+  font-size: 14px;
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+@media (max-width: 767px) {
+  .news .box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* End News Widget */
+/* Start Tasks Widget */
+.tasks {
+  background-color: white;
+  padding: var(--widget-padding);
+  border-radius: var(--widget-radius);
+}
+.tasks > h2 {
+  margin: 0 0 18px 0;
+}
+.tasks .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tasks .box:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+.tasks .box .txt {
+  flex-grow: 1;
+}
+.tasks .box .txt h4 {
+  margin: 0 0 5px;
+}
+.tasks .box .txt p {
+  color: var(--grey-color);
+  margin: 0;
+  font-size: 14px;
+}
+.tasks .box i {
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.tasks .box i:hover {
+  color: var(--red-color);
+  font-size: 17px;
+}
+.tasks .box:nth-of-type(4) .txt h4,
+.tasks .box:nth-of-type(4) .txt p  {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+/* End Tasks Widget */
+/* Start Search Widget */
+.top-items {
+  padding: var(--widget-padding);
+  border-radius: var(--widget-radius);
+  background-color: white;
+}
+.top-items > h2 {
+  margin: 0 0 18px 0; 
+}
+.top-items .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-items .box:not(:last-child) {
+  margin-bottom: 30px;
+}
+.top-items .box:first-of-type span,
+.top-items .box:first-of-type span:nth-child(2) {
+  color: var(--grey-color);
+}
+.top-items .box:not(:first-of-type) > span:nth-child(2) {
+  font-size: 13px;
+  background-color: #eee;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+/* End Top-Items Widget */
+/* Start Uploads Widget */
+.uploads {
+  background-color: white;
+  padding: var(--widget-padding);
+  border-radius: var(--widget-radius);
+}
+.uploads h2 {
+  margin: 0 0 18px 0;
+}
+.uploads .box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.uploads .box:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.uploads .box img {
+  width: 38px;
+  max-width: 100%;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.uploads .box img:hover {
+  width: 40px;
+}
+.uploads .box .txt {
+  flex: 1;
+}
+.uploads .box .txt h4 {
+  margin: 0px 0 5px;
+  cursor: pointer;
+}
+.uploads .box .txt span {
+  color: var(--grey-color);
+  font-size: 15px;
+}
+.uploads .box > span {
+  font-size: 14px;
+  background-color: #eee;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+/* End Uploads Widget */
+/* Start Last Project Widget */
+.last {
+  position: relative;
+  background-color: white;
+  border-radius: var(--widget-radius);
+  padding: var(--widget-padding);
+}
+.last > h2 {
+  margin: 0 0 18px 0;
+}
+.last ul {
+  position: relative;
+}
+.last ul::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 11px;
+  background-color: var(--blue-color);
+}
+.last ul li {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+.last ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  margin-right: 15px;
+  z-index: 2;
+}
+.last ul li.done::before {
+  background-color: var(--blue-color);
+}
+.last ul li.current::before {
+  animation: changing 0.5s infinite alternate;
+}
+.last > img {
+  position: absolute;
+  width: 110px;
+  bottom: 15px;
+  right: 20px;
+  opacity: 0.7;
+}
+@media (max-width: 767px) {
+  .last > img {
+    display: none;
+  }
+}
+/* End Last Project Widget */
+/* Start Reminder Widget */
+.reminder {
+  background-color: white;
+  padding: var(--widget-padding);
+  border-radius: var(--widget-radius);
+}
+.reminder h2 {
+  margin: 0 0 18px 0;
+}
+.reminder .box {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.reminder .box .circle {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-right: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 12px;
+}
+.reminder .box .blue {
+  border-right-color: var(--blue-color);
+}
+.reminder .box .green {
+  border-right-color: var(--green-color);
+}
+.reminder .box .yellow {
+  border-right-color: var(--orange-color);
+}
+.reminder .box .red {
+  border-right-color: var(--red-color);
+}
+.reminder .box .circle span {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: block;
+}
+.reminder .box .blue span {
+  background-color: var(--blue-color);
+}
+.reminder .box .green span {
+  background-color: var(--green-color);
+}
+.reminder .box .yellow span {
+  background-color: var(--orange-color);
+}
+.reminder .box .red span {
+  background-color: var(--red-color);
+}
+.reminder .box .txt {
+  flex: 1;
+}
+.reminder .box .txt h4 {
+  margin: 0 0 10px 0;
+}
+.reminder .box .txt p {
+  margin: 0;
+  color: var(--grey-color);
+  font-size: 14px;
+}
+/* End Reminder Widget */
+/* Start Latest Post Widget */
+.post {
+  background-color: white;
+  padding: var(--widget-padding);
+  border-radius: var(--widget-radius);
+}
+.post h2 {
+  margin: 0 0 18px 0;
+}
+.post .prof {
+  display: flex;
+  align-items: center;
+  gap: 15px;  
+}
+.post .prof img {
+  width: 45px;
+}
+.post .prof .txt h4 {
+  margin: 0 0 5px 0;
+}
+.post .prof .txt p {
+  margin: 0;
+  color: var(--grey-color);
+  font-size: 15px;
+}
+.post .tweet p {
+  line-height: 1.8;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+.post .reach {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+.post .reach > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55px;
+}
+.post .reach > div i {
+  font-size: 18px;
+  transition: 0.2s;
+  cursor: pointer;
+  color: var(--grey-color);
+}
+.post .reach > div i:hover {
+  font-size: 20px;
+}
+.post .reach > .love i:hover {
+  color: var(--red-color);
+}
+.post .reach > .comment i:hover {
+  color: black;
+}
+.post .reach > div span {
+  color: var(--grey-color);
+}
+/* End Latest Post Widget */
+/* Start Social Widget */
+.social {
+  background-color: white;
+  padding: var(--widget-padding);
+  border-radius: var(--widget-radius);
+}
+.social > h2 {
+  margin: 0 0 18px 0;
+}
+.social > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.social > div i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.social > div span:first-of-type {
+  flex: 1;
+  color: var(--grey-color);
+  font-size: 14px;
+}
+.social > div span:nth-of-type(2) {
+  font-size: 14px;
+  cursor: pointer;
+  transition: var(--main-transition);
+  color: white;
+}
+.social > div span:nth-of-type(2):hover {
+  background-color: #282828;
+}
+.social > .twitter {
+  background-color: #D1EDFD;
+}
+.social > .fb {
+  background-color: #D2E3FB;
+}
+.social > .insta {
+  background-color: #405ce64b;
+}
+.social > .in {
+  background-color: #CEE5F2;
+}
+.social > .twitter i,
+.social > .twitter span:nth-of-type(2) {
+  background-color: #1da1f2;
+}
+.social > .fb i,
+.social > .fb span:nth-of-type(2) {
+  background-color: #1877f2;
+}
+.social > .insta i,
+.social > .insta span:nth-of-type(2) {
+  background-color: #405de6;
+}
+.social > .in i,
+.social > .in span:nth-of-type(2) {
+  background-color: #1da1f2;
+}
+/* End Social Widget */
+/* Start Projects Widget */
+.projects {
+  background-color: white;
+  padding: var(--widget-padding);
+  border-radius: var(--widget-radius);
+  margin: 20px;
+}
+.projects h2 {
+  margin: 0 0 18px 0;
+}
+.projects .responsive-table {
+  overflow-x: auto; /* So you can scroll to the right or left on mobile or smaller screens  */
+}
+.projects .responsive-table table {
+  min-width: 1000px;
+  width: 100%;
+  font-size: 15px;
+  border-spacing: 0;
+}
+.projects table thead td {
+  background-color: #eee;
+  font-weight: bold;
+}
+.projects table tbody tr {
+  transition: var(--main-transition);
+}
+.projects table tbody tr:hover {
+  background-color: #faf7f7;
+}
+.projects table td {
+  padding: 15px;
+}
+.projects table tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.projects table tbody td:last-child {
+  border-right: 1px solid #eee;
+}
+.projects table tbody td img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: relative;
+  cursor: pointer;
+}
+.projects table tbody td img:hover {
+  z-index: 3;
+}
+.projects table tbody td img:not(:first-child) {
+  margin-left: -20px;
+}
+.projects table tbody td span {
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.projects table tbody td .pend {
+  background-color: var(--orange-color);
+} 
+.projects table tbody td .progress {
+  background-color: var(--blue-alt-color);
+} 
+.projects table tbody td .complete {
+  background-color: var(--green-color);
+} 
+.projects table tbody td .reject {
+  background-color: var(--red-color);
+} 
+/* End Projects Widget */
+/* End Dashboard Page */
