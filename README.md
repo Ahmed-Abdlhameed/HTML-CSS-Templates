@@ -33,7 +33,7 @@ This repository contains four HTML & CSS templates providing a comprehensive col
 
 ### Template-4 (Elzero)
   - **[Explore template files](Template_4)**
-  - **[Live preview]()**
+  - **[Live preview](https://template4-elzero.netlify.app/)**
 
 ---
 
