@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Framework File -->
+    <link rel="stylesheet" href="css/framework.css" />
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/setting-style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <!-- Start Sidebar -->
+      <div class="sidebar">
+        <h3>Elzero</h3>
+        <ul>
+          <li>
+            <a href="index.html">
+              <i class="fa-solid fa-chart-simple fa-fw"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="active" href="settings.html">
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <i class="fa-solid fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html">
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html">
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="friends.html">
+              <i class="fa-solid fa-user-group"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="files.html">
+              <i class="fa-solid fa-file"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html">
+              <i class="fa-sharp fa-solid fa-compass-drafting"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Sidebar -->
+      <!-- Start Content -->
+      <div class="content">
+        <!-- Start Head -->
+        <div class="head">
+          <div class="search">
+            <input type="search" placeholder="Search Elzero" name="" />
+          </div>
+          <div class="icons">
+            <span class="notf">
+              <a href="friends.html"><i class="fa-solid fa-bell fa-lg"></i></a>
+            </span>
+            <a href="profile.html"><img src="imgs/e8ec087.webp" alt="" /></a>
+          </div>
+        </div>
+        <!-- End Head -->
+        <h1 class="title">Settings</h1>
+        <div class="wrapper">
+          <!-- Start Control Widget -->
+          <div class="control">
+            <h2>Site Control</h2>
+            <p>Control The Website If There Is Maintenance.</p>
+            <div>
+              <div>
+                <span>Website Control</span>
+                <p>Open/Close Website And Type The Reason</p>
+              </div>
+              <div>
+                <label>
+                  <input class="toggle-check" type="checkbox" name="" checked />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+            </div>
+            <textarea
+              placeholder="Close Message Content"
+              name=""
+              id=""
+            ></textarea>
+          </div>
+          <!-- End Control Widget -->
+          <!-- Start Info Widget -->
+          <div class="info">
+            <h2>General Info</h2>
+            <p>General Information About Your Account</p>
+            <form action="">
+              <label for="">First Name</label>
+              <input type="text" placeholder="Type First Name" />
+              <label for="">Last Name</label>
+              <input type="text" placeholder="Type Last Name" />
+              <label for="">Email</label>
+              <div class="email">
+                <input
+                  type="email"
+                  placeholder="Type Your Email"
+                  value="o@nn.sa"
+                  disabled
+                  name=""
+                  id=""
+                />
+                <input type="submit" value="Change" />
+              </div>
+            </form>
+          </div>
+          <!-- End Info Widget -->
+          <!-- Start Security Widget -->
+          <div class="security">
+            <h2>Security Info</h2>
+            <p>Security Information About Your Account</p>
+            <div class="box">
+              <div class="txt">
+                <span>Password</span>
+                <p>Last Change On 25/10/2021</p>
+              </div>
+              <span class="btn-shape">Change</span>
+            </div>
+            <div class="box">
+              <div class="txt">
+                <span>Two-Factor Authentication</span>
+                <p>Enable/Disable The Feature</p>
+              </div>
+              <label>
+                <input class="toggle-check" type="checkbox" name="" checked />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+            <div class="box">
+              <div class="txt">
+                <span>Devices</span>
+                <p>Check The Login Devices List</p>
+              </div>
+              <span class="btn-shape">Devices</span>
+            </div>
+          </div>
+          <!-- End Security Widget -->
+          <!-- Start Social Widget -->
+          <div class="social">
+            <h2>Social Info</h2>
+            <p>Social Media Information</p>
+            <div class="box">
+              <i class="fa-brands fa-facebook-f"></i>
+              <input type="text" placeholder="Facebook Account" />
+            </div>
+            <div class="box">
+              <i class="fa-brands fa-twitter"></i>
+              <input type="text" placeholder="Twitter Account" />
+            </div>
+            <div class="box">
+              <i class="fa-brands fa-instagram"></i>
+              <input type="text" placeholder="Instagram Account" />
+            </div>
+            <div class="box">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <input type="text" placeholder="Linkedin Account" />
+            </div>
+          </div>
+          <!-- End Social Widget -->
+          <!-- Start W-Control Widget -->
+          <div class="w-control">
+            <h2>Widgets Control</h2>
+            <p>Show/Hide Widgets</p>
+            <form action="">
+              <div>
+                <input id="draft" type="checkbox" checked />
+                <label for="draft">Quick Draft</label>
+              </div>
+              <div>
+                <input id="targets" type="checkbox" checked />
+                <label for="targets">Yearly Targets</label>
+              </div>
+              <div>
+                <input id="stats" type="checkbox" checked />
+                <label for="stats">Tickets Statistics</label>
+              </div>
+              <div>
+                <input id="news" type="checkbox" checked />
+                <label for="news">Latest News</label>
+              </div>
+              <div>
+                <input id="mac" type="checkbox" />
+                <label for="mac">Latest Tasks</label>
+              </div>
+              <div>
+                <input id="top" type="checkbox" checked />
+                <label for="top">Top Search Items</label>
+              </div>
+            </form>
+          </div>
+          <!-- End W-Control Widget -->
+          <!-- Start Backup Widget -->
+          <div class="backup">
+            <h2>Backup Manager</h2>
+            <p>Control Backup Time And Location</p>
+            <form action="">
+              <div>
+                <input type="radio" name="time" id="day" checked />
+                <label for="day">Daily</label>
+              </div>
+              <div>
+                <input type="radio" name="time" id="week" />
+                <label for="week">Weekly</label>
+              </div>
+              <div>
+                <input type="radio" name="time" id="month" />
+                <label for="month">Monthly</label>
+              </div>
+            </form>
+            <div class="servers">
+              <div class="server">
+                <input type="radio" name="servers" id="server-one" />
+                <label for="server-one">
+                  <i class="fa-solid fa-server"></i>
+                  Megaman
+                </label>
+              </div>
+              <div class="server">
+                <input type="radio" name="servers" id="server-two" checked />
+                <label for="server-two">
+                  <i class="fa-solid fa-server"></i>
+                  Zero
+                </label>
+              </div>
+              <div class="server">
+                <input type="radio" name="servers" id="server-three" />
+                <label for="server-three">
+                  <i class="fa-solid fa-server"></i>
+                  Sigma
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- End Backup Widget -->
+        </div>
+      </div>
+      <!-- End Content -->
+    </div>
+  </body>
+</html>
