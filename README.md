@@ -1,17 +1,17 @@
-# 4 HTML & CSS Templates Focusing On Separate Design Aspects & Techniques:
+# 4 HTML & CSS Templates Focusing on Separate Design Aspects & Techniques:
 
 This repository contains four HTML & CSS templates providing a comprehensive collection of designs. Each template focuses on different web development techniques and layout structures
 
 ---
 
-## Table Of Contents
+## Table of Contents
 
 1. [Templates](#templates)
    - [Template-1 (Leon)](#template-1-leon)
    - [Template-2 (Kasper)](#template-2-kasper)
    - [Template-3 (Master)](#template-3-master)
    - [Template-4 (Master)](#template-4-elzero)
-2. [How To Use](#how-to-use)
+2. [How to Use](#how-to-use)
 3. [Contributions](#contributions)
 4. [License](#license)
 
@@ -37,7 +37,7 @@ This repository contains four HTML & CSS templates providing a comprehensive col
 
 ---
 
-## How To Use
+## How to Use
 
 1. Navigate to template directory to review its files.
 3. You can simply view the live preview of the template by visiting the link in the README file.
